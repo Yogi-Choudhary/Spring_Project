@@ -1,0 +1,14 @@
+package co.in.springdemo;
+
+public class MyApp {
+	
+	public static void main(String[] args) {
+		
+		// create the objec
+		BaseballCoach Coach = new BaseballCoach();
+		
+		// use the object
+		System.out.println(Coach.getDailyWorkout());
+	}
+
+}
