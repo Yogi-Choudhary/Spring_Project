@@ -12,8 +12,8 @@
     
      <!-- load the properties file: sport.properties -->
           
-      <context:property-placeholder location="classpath:sport.properties"/>
-     
+     <context:property-placeholder location="classpath:sport.properties"/>
+      
      <!-- Define your beans here -->
      
      
@@ -22,20 +22,20 @@
      <bean id="myFortuneService"
             class="co.in.springdemo.HappyFortuneService">
      </bean>
-     
+   <!--   
     <bean id="myCoach"
  		class="co.in.springdemo.BaseballCoach">	 	
  	 		
- 		<!-- set up constructor injection --> 	
- 		<constructor-arg ref="myFortuneService"/>
- 	</bean>
- 	
- <!-- 	<bean id="myCoach"
- 		class="co.in.springdemo.TrackCoach">	 	
- 		
  		set up constructor injection 	
  		<constructor-arg ref="myFortuneService"/>
  	</bean> -->
+ 	
+ 	<bean id="myCoach"
+ 		class="co.in.springdemo.TrackCoach">	 	
+ 		
+ 		<!-- set up constructor injection  -->	
+ 		<constructor-arg ref="myFortuneService"/>
+ 	</bean>
  	
  	<bean id="myCricketCoach"
  	      class="co.in.springdemo.CricketCoach">
